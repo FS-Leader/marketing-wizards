@@ -1,0 +1,148 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication8.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RKLUXfeet - Step into Luxury</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+     <header class="header">
+     <div class="container">
+         <div class="nav-brand">
+             <h1 class="logo">RKLUXfeet</h1>
+         </div>
+         <nav class="nav-menu">
+             <ul class="nav-list">
+                 <li><a href="index.aspx" class="nav-link">Home</a></li>
+                 <li><a href="shoes.aspx" class="nav-link">Shoes</a></li>
+                  <li><a href="about.aspx" class="nav-link active">About Us</a></li>
+                  <li><a href="contact.aspx" class="nav-link">Contact</a></li>
+             </ul>
+         </nav>
+         <div class="nav-actions">
+             <a href="register.aspx" class="nav-action"><i class="fas fa-user-plus"></i> Register</a>
+             <a href="login.aspx" class="nav-action"><i class="fas fa-sign-in-alt"></i> Login</a>
+             <a href="logout.aspx" class="nav-action"><i class="fas fa-sign-out-alt"></i> Logout</a>
+             <a href="cart.html" class="nav-action cart-icon"><i class="fas fa-shopping-cart"></i> Cart</a>
+         </div>
+     </div>
+ </header>
+            </asp:ContentPlaceHolder>
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                 <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Step into Luxury with RKLUXfeet</h1>
+            <p class="hero-subtitle">Discover premium footwear that combines style, comfort, and quality</p>
+            <a href="shoes.html" class="btn btn-primary">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="tmp/images/hero-shoes.jpg" alt="Luxury Shoes" class="hero-img">
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="tmp/images/mens-running-1.jpg" alt="Running Shoes">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Running Shoes</h3>
+                        <p class="product-price">₹4,999</p>
+                        <button class="btn btn-secondary">Quick Shop</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="tmp/images/mens-sports-1.jpg" alt="Sports Shoes">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Elite Sports Shoes</h3>
+                        <p class="product-price">₹6,499</p>
+                        <button class="btn btn-secondary">Quick Shop</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="tmp/images/mens-casual-1.jpg" alt="Casual Shoes">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Casual Shoes</h3>
+                        <p class="product-price">₹3,999</p>
+                        <button class="btn btn-secondary">Quick Shop</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="tmp/images/mens-formal-1.jpg" alt="Formal Shoes">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Executive Formal Shoes</h3>
+                        <p class="product-price">₹7,999</p>
+                        <button class="btn btn-secondary">Quick Shop</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ </asp:ContentPlaceHolder>
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                 <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>RKLUXfeet</h3>
+                    <p>Premium footwear for the modern lifestyle</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shoes.html">Shoes</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 info@rkluxfeet.com</p>
+                    <p>📞 +91 98765 43210</p>
+                    <p>📍 123 Fashion Street, Mumbai</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RKLUXfeet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+ </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

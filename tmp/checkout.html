@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - RKLUXfeet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo">RKLUXfeet</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="shoes.html" class="nav-link">Shoes</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="register.html" class="nav-action"><i class="fas fa-user-plus"></i> Register</a>
+                <a href="login.html" class="nav-action"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <a href="logout.html" class="nav-action"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                <a href="cart.html" class="nav-action cart-icon"><i class="fas fa-shopping-cart"></i> Cart (3)</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Checkout</h1>
+            <p class="page-subtitle">Complete your order</p>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-content">
+                <!-- Checkout Form -->
+                <div class="checkout-form-container">
+                    <form class="checkout-form">
+                        <!-- Billing Information -->
+                        <div class="checkout-section-card">
+                            <h3 class="checkout-section-title">
+                                <i class="fas fa-user"></i>
+                                Billing Information
+                            </h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name" class="form-label">First Name</label>
+                                    <input type="text" id="first-name" name="first_name" class="form-input" placeholder="Enter first name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name" class="form-label">Last Name</label>
+                                    <input type="text" id="last-name" name="last_name" class="form-input" placeholder="Enter last name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="Enter email address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="Enter phone number" required>
+                            </div>
+                        </div>
+
+                        <!-- Shipping Address -->
+                        <div class="checkout-section-card">
+                            <h3 class="checkout-section-title">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Shipping Address
+                            </h3>
+                            <div class="form-group">
+                                <label for="address" class="form-label">Street Address</label>
+                                <input type="text" id="address" name="address" class="form-input" placeholder="Enter street address" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city" class="form-label">City</label>
+                                    <input type="text" id="city" name="city" class="form-input" placeholder="Enter city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state" class="form-label">State</label>
+                                    <select id="state" name="state" class="form-input" required>
+                                        <option value="">Select State</option>
+                                        <option value="MH">Maharashtra</option>
+                                        <option value="DL">Delhi</option>
+                                        <option value="KA">Karnataka</option>
+                                        <option value="TN">Tamil Nadu</option>
+                                        <option value="GJ">Gujarat</option>
+                                        <option value="UP">Uttar Pradesh</option>
+                                        <option value="WB">West Bengal</option>
+                                        <option value="RJ">Rajasthan</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="pincode" class="form-label">Pincode</label>
+                                    <input type="text" id="pincode" name="pincode" class="form-input" placeholder="Enter pincode" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country" class="form-label">Country</label>
+                                    <input type="text" id="country" name="country" class="form-input" value="India" readonly>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Method -->
+                        <div class="checkout-section-card">
+                            <h3 class="checkout-section-title">
+                                <i class="fas fa-credit-card"></i>
+                                Payment Method
+                            </h3>
+                            <div class="payment-methods">
+                                <div class="payment-option">
+                                    <input type="radio" id="card" name="payment_method" value="card" checked>
+                                    <label for="card" class="payment-label">
+                                        <i class="fas fa-credit-card"></i>
+                                        Credit/Debit Card
+                                    </label>
+                                </div>
+                                <div class="payment-option">
+                                    <input type="radio" id="upi" name="payment_method" value="upi">
+                                    <label for="upi" class="payment-label">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        UPI
+                                    </label>
+                                </div>
+                                <div class="payment-option">
+                                    <input type="radio" id="netbanking" name="payment_method" value="netbanking">
+                                    <label for="netbanking" class="payment-label">
+                                        <i class="fas fa-university"></i>
+                                        Net Banking
+                                    </label>
+                                </div>
+                                <div class="payment-option">
+                                    <input type="radio" id="cod" name="payment_method" value="cod">
+                                    <label for="cod" class="payment-label">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        Cash on Delivery
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Card Details (shown when card is selected) -->
+                            <div class="card-details" id="card-details">
+                                <div class="form-group">
+                                    <label for="card-number" class="form-label">Card Number</label>
+                                    <input type="text" id="card-number" name="card_number" class="form-input" placeholder="1234 5678 9012 3456">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="expiry" class="form-label">Expiry Date</label>
+                                        <input type="text" id="expiry" name="expiry" class="form-input" placeholder="MM/YY">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cvv" class="form-label">CVV</label>
+                                        <input type="text" id="cvv" name="cvv" class="form-input" placeholder="123">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="card-name" class="form-label">Name on Card</label>
+                                    <input type="text" id="card-name" name="card_name" class="form-input" placeholder="Enter name as on card">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Order Notes -->
+                        <div class="checkout-section-card">
+                            <h3 class="checkout-section-title">
+                                <i class="fas fa-sticky-note"></i>
+                                Order Notes (Optional)
+                            </h3>
+                            <div class="form-group">
+                                <textarea id="order-notes" name="order_notes" class="form-textarea" placeholder="Any special instructions for your order..." rows="3"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <div class="summary-card">
+                        <h3 class="summary-title">Order Summary</h3>
+                        
+                        <!-- Order Items -->
+                        <div class="order-items">
+                            <div class="order-item">
+                                <div class="order-item-image">
+                                    <img src="images/mens-running-1.jpg" alt="Nike Air Max">
+                                </div>
+                                <div class="order-item-details">
+                                    <h4 class="order-item-name">Nike Air Max Running</h4>
+                                    <p class="order-item-specs">Size: 9, Color: Black</p>
+                                    <p class="order-item-price">₹4,999 × 1</p>
+                                </div>
+                            </div>
+                            
+                            <div class="order-item">
+                                <div class="order-item-image">
+                                    <img src="images/mens-sports-1.jpg" alt="Adidas Ultraboost">
+                                </div>
+                                <div class="order-item-details">
+                                    <h4 class="order-item-name">Adidas Ultraboost</h4>
+                                    <p class="order-item-specs">Size: 10, Color: White</p>
+                                    <p class="order-item-price">₹5,999 × 2</p>
+                                </div>
+                            </div>
+                            
+                            <div class="order-item">
+                                <div class="order-item-image">
+                                    <img src="images/mens-casual-1.jpg" alt="Puma RS-X">
+                                </div>
+                                <div class="order-item-details">
+                                    <h4 class="order-item-name">Puma RS-X</h4>
+                                    <p class="order-item-specs">Size: 11, Color: Red</p>
+                                    <p class="order-item-price">₹3,999 × 1</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Price Breakdown -->
+                        <div class="price-breakdown">
+                            <div class="price-row">
+                                <span>Subtotal (3 items)</span>
+                                <span>₹20,996</span>
+                            </div>
+                            <div class="price-row">
+                                <span>Shipping</span>
+                                <span class="free-shipping">FREE</span>
+                            </div>
+                            <div class="price-row">
+                                <span>Tax (GST 18%)</span>
+                                <span>₹3,779</span>
+                            </div>
+                            <div class="price-row total">
+                                <span>Total</span>
+                                <span>₹24,775</span>
+                            </div>
+                        </div>
+
+                        <!-- Place Order Button -->
+                        <button type="submit" class="btn btn-primary place-order-btn">
+                            <i class="fas fa-lock"></i>
+                            Place Order - ₹24,775
+                        </button>
+
+                        <!-- Security Features -->
+                        <div class="security-features">
+                            <div class="security-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>256-bit SSL encryption</span>
+                            </div>
+                            <div class="security-item">
+                                <i class="fas fa-undo"></i>
+                                <span>30-day return policy</span>
+                            </div>
+                            <div class="security-item">
+                                <i class="fas fa-truck"></i>
+                                <span>Free shipping & delivery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>RKLUXfeet</h3>
+                    <p>Premium footwear for the modern lifestyle</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shoes.html">Shoes</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="shoes.html#men">Men's Shoes</a></li>
+                        <li><a href="shoes.html#women">Women's Shoes</a></li>
+                        <li><a href="shoes.html#running">Running</a></li>
+                        <li><a href="shoes.html#sports">Sports</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 info@rkluxfeet.com</p>
+                    <p>📞 +91 98765 43210</p>
+                    <p>📍 123 Fashion Street, Mumbai</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RKLUXfeet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

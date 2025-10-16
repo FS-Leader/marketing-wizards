@@ -1,0 +1,236 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="about.aspx.cs" Inherits="WebApplication8.about" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - RKLUXfeet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+     <div class="container">
+         <div class="nav-brand">
+             <h1 class="logo">RKLUXfeet</h1>
+         </div>
+         <nav class="nav-menu">
+             <ul class="nav-list">
+                 <li><a href="index.aspx" class="nav-link">Home</a></li>
+                 <li><a href="shoes.aspx" class="nav-link">Shoes</a></li>
+                  <li><a href="about.aspx" class="nav-link active">About Us</a></li>
+                  <li><a href="contact.aspx" class="nav-link">Contact</a></li>
+             </ul>
+         </nav>
+         <div class="nav-actions">
+             <a href="register.aspx" class="nav-action"><i class="fas fa-user-plus"></i> Register</a>
+             <a href="login.aspx" class="nav-action"><i class="fas fa-sign-in-alt"></i> Login</a>
+             <a href="logout.aspx" class="nav-action"><i class="fas fa-sign-out-alt"></i> Logout</a>
+             <a href="cart.html" class="nav-action cart-icon"><i class="fas fa-shopping-cart"></i> Cart</a>
+         </div>
+     </div>
+ </header>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">About RKLUXfeet</h1>
+            <p class="page-subtitle">Crafting luxury footwear for the modern world</p>
+        </div>
+    </section>
+
+    <!-- Company Introduction -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="about-description">
+                        Founded in 2020, RKLUXfeet emerged from a simple yet powerful vision: to create footwear that seamlessly blends luxury, comfort, and style. What started as a small family business has grown into one of India's most trusted premium shoe brands, serving customers who demand nothing but the best.
+                    </p>
+                    <p class="about-description">
+                        Our journey began when our founder, Rajesh Kumar, noticed a gap in the market for high-quality, stylish footwear that didn't compromise on comfort. With over 15 years of experience in the footwear industry, he set out to create a brand that would redefine luxury footwear in India.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-story.jpg" alt="Our Story" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="mission-section">
+        <div class="container">
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="mission-title">Our Mission</h3>
+                    <p class="mission-description">
+                        To provide premium, comfortable, and stylish footwear that empowers our customers to step confidently into every aspect of their lives, from the boardroom to the gym, from casual outings to formal events.
+                    </p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="mission-title">Our Vision</h3>
+                    <p class="mission-description">
+                        To become India's leading luxury footwear brand, recognized globally for our commitment to quality, innovation, and customer satisfaction while maintaining our core values of authenticity and craftsmanship.
+                    </p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="mission-title">Our Values</h3>
+                    <p class="mission-description">
+                        Quality, integrity, innovation, and customer-centricity form the foundation of everything we do. We believe in sustainable practices, ethical manufacturing, and creating products that last.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose RKLUXfeet?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h4 class="feature-title">Premium Quality</h4>
+                    <p class="feature-description">We use only the finest materials and latest manufacturing techniques to ensure every pair meets our high standards.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h4 class="feature-title">Trendy Designs</h4>
+                    <p class="feature-description">Our design team stays ahead of fashion trends to bring you the most stylish and contemporary footwear.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="feature-title">Comfort Guarantee</h4>
+                    <p class="feature-description">Every shoe is designed with ergonomics in mind, ensuring maximum comfort for all-day wear.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h4 class="feature-title">Fast Delivery</h4>
+                    <p class="feature-description">Quick and reliable delivery across India with free shipping on orders above ₹2,999.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h4 class="feature-title">Easy Returns</h4>
+                    <p class="feature-description">30-day hassle-free return policy if you're not completely satisfied with your purchase.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4 class="feature-title">24/7 Support</h4>
+                    <p class="feature-description">Our customer support team is always ready to help you with any questions or concerns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="tmp/images/deep.jpg" alt="Ramani Deep">
+                    </div>
+                    <h4 class="member-name">Deep Ramani</h4>
+                    <p class="member-position">Founder & CEO</p>
+                    <p class="member-description">15+ years in footwear industry, passionate about creating exceptional products.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/team-member-2.jpg" alt="Meet Padaliya">
+                    </div>
+                    <h4 class="member-name">Meet padaliya</h4>
+                    <p class="member-position">Head of Design</p>
+                    <p class="member-description">Creative visionary with expertise in fashion design and trend forecasting.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/team-member-3.jpg" alt="Vatsal Kotecha">
+                    </div>
+                    <h4 class="member-name">Vatsal Kotecha</h4>
+                    <p class="member-position">Quality Assurance</p>
+                    <p class="member-description">Ensures every product meets our stringent quality standards before reaching customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Shoe Designs</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Cities Served</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">Customer Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>RKLUXfeet</h3>
+                    <p>Premium footwear for the modern lifestyle</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.aspx">Home</a></li>
+                        <li><a href="shoes.aspx">Shoes</a></li>
+                        <li><a href="about.aspx">About Us</a></li>
+                        <li><a href="contact.aspx">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 info@rkluxfeet.com</p>
+                    <p>📞 +91 98765 43210</p>
+                    <p>📍 123 Fashion Street, Mumbai</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RKLUXfeet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

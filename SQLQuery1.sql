@@ -1,0 +1,1 @@
+﻿ALTER TABLE shoes ADD Brand NVARCHAR(100) NULL;

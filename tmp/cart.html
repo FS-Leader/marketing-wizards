@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - RKLUXfeet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo">RKLUXfeet</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="shoes.html" class="nav-link">Shoes</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="register.html" class="nav-action"><i class="fas fa-user-plus"></i> Register</a>
+                <a href="login.html" class="nav-action"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <a href="logout.html" class="nav-action"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                <a href="cart.html" class="nav-action cart-icon active"><i class="fas fa-shopping-cart"></i> Cart (3)</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Shopping Cart</h1>
+            <p class="page-subtitle">Review your items before checkout</p>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-content">
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <h2 class="cart-title">Your Items (3)</h2>
+                        <button class="btn btn-secondary">Clear Cart</button>
+                    </div>
+                    
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="images/mens-running-1.jpg" alt="Nike Air Max Running">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3 class="cart-item-name">Nike Air Max Running</h3>
+                            <p class="cart-item-category">Men's Running Shoes</p>
+                            <div class="cart-item-options">
+                                <div class="size-selector">
+                                    <label>Size:</label>
+                                    <select class="size-select">
+                                        <option value="8">8</option>
+                                        <option value="9" selected>9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                    </select>
+                                </div>
+                                <div class="color-selector">
+                                    <label>Color:</label>
+                                    <div class="color-options">
+                                        <span class="color-option active" style="background: #000;"></span>
+                                        <span class="color-option" style="background: #fff; border: 1px solid #ddd;"></span>
+                                        <span class="color-option" style="background: #e74c3c;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item-quantity">
+                            <label>Qty:</label>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn">-</button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <span class="price">₹4,999</span>
+                            <button class="remove-btn">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="images/mens-sports-1.jpg" alt="Adidas Ultraboost">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3 class="cart-item-name">Adidas Ultraboost</h3>
+                            <p class="cart-item-category">Men's Sports Shoes</p>
+                            <div class="cart-item-options">
+                                <div class="size-selector">
+                                    <label>Size:</label>
+                                    <select class="size-select">
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="11">11</option>
+                                    </select>
+                                </div>
+                                <div class="color-selector">
+                                    <label>Color:</label>
+                                    <div class="color-options">
+                                        <span class="color-option" style="background: #000;"></span>
+                                        <span class="color-option active" style="background: #fff; border: 1px solid #ddd;"></span>
+                                        <span class="color-option" style="background: #e74c3c;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item-quantity">
+                            <label>Qty:</label>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn">-</button>
+                                <input type="number" value="2" min="1" class="quantity-input">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <span class="price">₹11,998</span>
+                            <button class="remove-btn">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="images/mens-casual-1.jpg" alt="Puma RS-X">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3 class="cart-item-name">Puma RS-X</h3>
+                            <p class="cart-item-category">Men's Casual Shoes</p>
+                            <div class="cart-item-options">
+                                <div class="size-selector">
+                                    <label>Size:</label>
+                                    <select class="size-select">
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11" selected>11</option>
+                                    </select>
+                                </div>
+                                <div class="color-selector">
+                                    <label>Color:</label>
+                                    <div class="color-options">
+                                        <span class="color-option" style="background: #000;"></span>
+                                        <span class="color-option" style="background: #fff; border: 1px solid #ddd;"></span>
+                                        <span class="color-option active" style="background: #e74c3c;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item-quantity">
+                            <label>Qty:</label>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn">-</button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <span class="price">₹3,999</span>
+                            <button class="remove-btn">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <div class="summary-card">
+                        <h3 class="summary-title">Order Summary</h3>
+                        
+                        <div class="summary-row">
+                            <span>Subtotal (3 items)</span>
+                            <span>₹20,996</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span class="free-shipping">FREE</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax (GST 18%)</span>
+                            <span>₹3,779</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span>₹24,775</span>
+                        </div>
+
+                        <div class="summary-actions">
+                            <a href="checkout.html" class="btn btn-primary checkout-btn">
+                                <i class="fas fa-credit-card"></i>
+                                Proceed to Checkout
+                            </a>
+                            <a href="shoes.html" class="btn btn-secondary">
+                                <i class="fas fa-arrow-left"></i>
+                                Continue Shopping
+                            </a>
+                        </div>
+
+                        <div class="summary-features">
+                            <div class="feature-item">
+                                <i class="fas fa-truck"></i>
+                                <span>Free shipping on orders above ₹2,999</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-undo"></i>
+                                <span>30-day return policy</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Secure payment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>RKLUXfeet</h3>
+                    <p>Premium footwear for the modern lifestyle</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shoes.html">Shoes</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="shoes.html#men">Men's Shoes</a></li>
+                        <li><a href="shoes.html#women">Women's Shoes</a></li>
+                        <li><a href="shoes.html#running">Running</a></li>
+                        <li><a href="shoes.html#sports">Sports</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 info@rkluxfeet.com</p>
+                    <p>📞 +91 98765 43210</p>
+                    <p>📍 123 Fashion Street, Mumbai</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RKLUXfeet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

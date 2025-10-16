@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - RKLUXfeet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="admin-dashboard-body">
+    <!-- Admin Header -->
+    <header class="admin-header">
+        <div class="admin-header-content">
+            <div class="admin-brand">
+                <h1 class="admin-logo">RKLUXfeet Admin</h1>
+            </div>
+            <div class="admin-nav">
+                <a href="index.html" class="admin-nav-link">
+                    <i class="fas fa-home"></i> View Site
+                </a>
+                <a href="admin-login.html" class="admin-nav-link">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar">
+        <nav class="admin-menu">
+            <ul class="admin-menu-list">
+                <li><a href="#dashboard" class="admin-menu-link active">
+                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                </a></li>
+                <li><a href="#products" class="admin-menu-link">
+                    <i class="fas fa-shoe-prints"></i> Products
+                </a></li>
+                <li><a href="#orders" class="admin-menu-link">
+                    <i class="fas fa-shopping-cart"></i> Orders
+                </a></li>
+                <li><a href="#customers" class="admin-menu-link">
+                    <i class="fas fa-users"></i> Customers
+                </a></li>
+                <li><a href="#analytics" class="admin-menu-link">
+                    <i class="fas fa-chart-bar"></i> Analytics
+                </a></li>
+                <li><a href="#settings" class="admin-menu-link">
+                    <i class="fas fa-cog"></i> Settings
+                </a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="admin-main">
+        <div class="admin-content">
+            <!-- Dashboard Overview -->
+            <section id="dashboard" class="admin-section">
+                <h2 class="admin-section-title">Dashboard Overview</h2>
+                
+                <!-- Stats Cards -->
+                <div class="admin-stats-grid">
+                    <div class="admin-stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number">1,234</h3>
+                            <p class="stat-label">Total Orders</p>
+                        </div>
+                    </div>
+                    <div class="admin-stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number">₹2,45,678</h3>
+                            <p class="stat-label">Total Revenue</p>
+                        </div>
+                    </div>
+                    <div class="admin-stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number">5,678</h3>
+                            <p class="stat-label">Total Customers</p>
+                        </div>
+                    </div>
+                    <div class="admin-stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-shoe-prints"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number">156</h3>
+                            <p class="stat-label">Products</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Orders -->
+                <div class="admin-card">
+                    <div class="admin-card-header">
+                        <h3 class="admin-card-title">Recent Orders</h3>
+                        <a href="#" class="btn btn-secondary">View All</a>
+                    </div>
+                    <div class="admin-table-container">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Product</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#ORD001</td>
+                                    <td>John Doe</td>
+                                    <td>Nike Air Max</td>
+                                    <td>₹4,999</td>
+                                    <td><span class="status status-pending">Pending</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary">View</button>
+                                        <button class="btn btn-sm btn-secondary">Edit</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#ORD002</td>
+                                    <td>Jane Smith</td>
+                                    <td>Adidas Ultraboost</td>
+                                    <td>₹5,999</td>
+                                    <td><span class="status status-shipped">Shipped</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary">View</button>
+                                        <button class="btn btn-sm btn-secondary">Edit</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#ORD003</td>
+                                    <td>Mike Johnson</td>
+                                    <td>Puma RS-X</td>
+                                    <td>₹3,999</td>
+                                    <td><span class="status status-delivered">Delivered</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary">View</button>
+                                        <button class="btn btn-sm btn-secondary">Edit</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Products Management -->
+            <section id="products" class="admin-section" style="display: none;">
+                <div class="admin-section-header">
+                    <h2 class="admin-section-title">Product Management</h2>
+                    <button class="btn btn-primary" onclick="showAddProductForm()">
+                        <i class="fas fa-plus"></i> Add New Product
+                    </button>
+                </div>
+
+                <!-- Add Product Form -->
+                <div class="admin-card" id="add-product-form" style="display: none;">
+                    <h3 class="admin-card-title">Add New Product</h3>
+                    <form class="admin-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="product-name" class="form-label">Product Name</label>
+                                <input type="text" id="product-name" class="form-input" placeholder="Enter product name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="product-category" class="form-label">Category</label>
+                                <select id="product-category" class="form-input" required>
+                                    <option value="">Select Category</option>
+                                    <option value="men-running">Men's Running</option>
+                                    <option value="men-sports">Men's Sports</option>
+                                    <option value="men-casual">Men's Casual</option>
+                                    <option value="men-formal">Men's Formal</option>
+                                    <option value="women-running">Women's Running</option>
+                                    <option value="women-sports">Women's Sports</option>
+                                    <option value="women-casual">Women's Casual</option>
+                                    <option value="women-formal">Women's Formal</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="product-price" class="form-label">Price (₹)</label>
+                                <input type="number" id="product-price" class="form-input" placeholder="Enter price" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="product-stock" class="form-label">Stock Quantity</label>
+                                <input type="number" id="product-stock" class="form-input" placeholder="Enter stock quantity" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-description" class="form-label">Description</label>
+                            <textarea id="product-description" class="form-textarea" placeholder="Enter product description" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-image" class="form-label">Product Image</label>
+                            <input type="file" id="product-image" class="form-input" accept="image/*">
+                            <small class="form-help">Upload a high-quality image of the product</small>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Add Product</button>
+                            <button type="button" class="btn btn-secondary" onclick="hideAddProductForm()">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Products List -->
+                <div class="admin-card">
+                    <div class="admin-card-header">
+                        <h3 class="admin-card-title">All Products</h3>
+                        <div class="admin-search">
+                            <input type="text" placeholder="Search products..." class="search-input">
+                            <i class="fas fa-search search-icon"></i>
+                        </div>
+                    </div>
+                    <div class="admin-table-container">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Category</th>
+                                    <th>Price</th>
+                                    <th>Stock</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="images/mens-running-1.jpg" alt="Product" class="product-thumb"></td>
+                                    <td>Nike Air Max Running</td>
+                                    <td>Men's Running</td>
+                                    <td>₹4,999</td>
+                                    <td>25</td>
+                                    <td><span class="status status-active">Active</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary">Edit</button>
+                                        <button class="btn btn-sm btn-danger">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/mens-sports-1.jpg" alt="Product" class="product-thumb"></td>
+                                    <td>Adidas Ultraboost</td>
+                                    <td>Men's Sports</td>
+                                    <td>₹5,999</td>
+                                    <td>18</td>
+                                    <td><span class="status status-active">Active</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary">Edit</button>
+                                        <button class="btn btn-sm btn-danger">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/mens-casual-1.jpg" alt="Product" class="product-thumb"></td>
+                                    <td>Puma RS-X</td>
+                                    <td>Men's Casual</td>
+                                    <td>₹3,999</td>
+                                    <td>32</td>
+                                    <td><span class="status status-active">Active</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary">Edit</button>
+                                        <button class="btn btn-sm btn-danger">Delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Orders Management -->
+            <section id="orders" class="admin-section" style="display: none;">
+                <h2 class="admin-section-title">Order Management</h2>
+                <div class="admin-card">
+                    <div class="admin-card-header">
+                        <h3 class="admin-card-title">All Orders</h3>
+                        <div class="admin-filters">
+                            <select class="filter-select">
+                                <option value="">All Status</option>
+                                <option value="pending">Pending</option>
+                                <option value="shipped">Shipped</option>
+                                <option value="delivered">Delivered</option>
+                                <option value="cancelled">Cancelled</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="admin-table-container">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Products</th>
+                                    <th>Total Amount</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#ORD001</td>
+                                    <td>John Doe<br><small>john@email.com</small></td>
+                                    <td>Nike Air Max (1)<br>Adidas Ultraboost (1)</td>
+                                    <td>₹10,998</td>
+                                    <td><span class="status status-pending">Pending</span></td>
+                                    <td>2024-01-15</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary">View</button>
+                                        <button class="btn btn-sm btn-success">Process</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#ORD002</td>
+                                    <td>Jane Smith<br><small>jane@email.com</small></td>
+                                    <td>Puma RS-X (2)</td>
+                                    <td>₹7,998</td>
+                                    <td><span class="status status-shipped">Shipped</span></td>
+                                    <td>2024-01-14</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary">View</button>
+                                        <button class="btn btn-sm btn-info">Track</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#ORD003</td>
+                                    <td>Mike Johnson<br><small>mike@email.com</small></td>
+                                    <td>Oxford Dress Shoes (1)</td>
+                                    <td>₹7,999</td>
+                                    <td><span class="status status-delivered">Delivered</span></td>
+                                    <td>2024-01-13</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary">View</button>
+                                        <button class="btn btn-sm btn-secondary">Invoice</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        function showAddProductForm() {
+            document.getElementById('add-product-form').style.display = 'block';
+        }
+
+        function hideAddProductForm() {
+            document.getElementById('add-product-form').style.display = 'none';
+        }
+
+        // Simple navigation
+        document.querySelectorAll('.admin-menu-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove active class from all links
+                document.querySelectorAll('.admin-menu-link').forEach(l => l.classList.remove('active'));
+                
+                // Add active class to clicked link
+                this.classList.add('active');
+                
+                // Hide all sections
+                document.querySelectorAll('.admin-section').forEach(section => {
+                    section.style.display = 'none';
+                });
+                
+                // Show target section
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
